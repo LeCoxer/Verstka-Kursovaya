@@ -1,0 +1,261 @@
+.table {
+    width: 40%;
+    height: 5%;
+    background-color: sienna;
+    position: absolute;
+    top: 47%;
+    left: 29%;
+
+}
+
+.dop   {
+    top: 0%;
+    left: -100px;
+}
+
+.dop .spinka1{
+    background-color: black;
+}
+
+.upperPart {
+    width: 5%;
+    height: 16%;
+    border-radius: 50%;
+    background-color: sienna;
+    position: absolute;
+    top: 49%;
+    left: 45.5%;
+}
+
+.bottomPart {
+    width: 0;
+    height: 12%;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid sienna;
+    position: absolute;
+    top: 50%;
+    left: 40.75%;
+
+}
+
+.ruchkakryshki {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 23.5%;
+    left: 45%;
+}
+
+.kryshka {
+    width: 12.5%;
+    height: 10%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 42% 38%, white 2%, red 80%);
+    position: absolute;
+    top: 25.5%;
+    left: 41.25%;
+}
+
+.telo {
+    width: 22.5%;
+    height: 17.5%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 40%, white, red 80%);
+    position: absolute;
+    top: 30%;
+    left: 36.5%;
+
+}
+
+.ruchkatela {
+    width: 7.5%;
+    height: 7.5%;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid red;
+    position: absolute;
+    top: 32.5%;
+    left: 54%;
+
+}
+
+.nosik {
+    margin-left: 10%;
+    width: 3.5%;
+    height: 4.5%;
+    transform: skew(55deg);
+    background: #ff0000;
+    position: absolute;
+    top: 32.5%;
+    ;
+    left: 25.5%;
+    ;
+
+}
+
+
+.spinka1 {
+
+    width: 15%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: sienna;
+    position: absolute;
+    top: 25%;
+    left: 3%;
+
+}
+
+.spinka2 {
+    width: 15%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25%;
+    left: 0%;
+
+}
+
+.noga1 {
+    width: 3%;
+    height: 18.5%;
+    background-color: sienna;
+    position: absolute;
+    top: 57.5%;
+    left: 27%;
+}
+
+.noga2 {
+    width: 3%;
+    height: 18.5%;
+    background-color: sienna;
+    position: absolute;
+    top: 57.5%;
+    right: 27%;
+}
+
+.sidushka1 {
+    width: 17.5%;
+    height: 4%;
+    background-color: sienna;
+    position: absolute;
+    top: 57.5%;
+    left: 15%;
+}
+
+.sidushka2 {
+    width: 17.5%;
+    height: 4%;
+    background-color: sienna;
+    position: absolute;
+    top: 57.5%;
+    right: 15%;
+}
+
+.kruzhok1 {
+    width: 3%;
+    height: 2.5%;
+    border-radius: 50%;
+    background-color: rgb(49, 23, 0);
+    position: absolute;
+    top: 58.25%;
+    left: 16%;
+
+}
+
+.kruzhok2 {
+    width: 3%;
+    height: 2.5%;
+    border-radius: 50%;
+    background-color: rgb(49, 23, 0);
+    position: absolute;
+    top: 58.25%;
+    left: 21.5%;
+
+}
+
+.kruzhok3 {
+    width: 3%;
+    height: 2.5%;
+    border-radius: 50%;
+    background-color: rgb(49, 23, 0);
+    position: absolute;
+    top: 58.25%;
+    left: 27%;
+}
+
+.kruzhok4 {
+    width: 3%;
+    height: 2.5%;
+    border-radius: 50%;
+    background-color: rgb(49, 23, 0);
+    position: absolute;
+    top: 58.25%;
+    right: 16%;
+
+}
+
+.kruzhok5 {
+    width: 3%;
+    height: 2.5%;
+    border-radius: 50%;
+    background-color: rgb(49, 23, 0);
+    position: absolute;
+    top: 58.25%;
+    right: 21.5%;
+
+}
+
+.kruzhok6 {
+    width: 3%;
+    height: 2.5%;
+    border-radius: 50%;
+    background-color: rgb(49, 23, 0);
+    position: absolute;
+    top: 58.25%;
+    right: 27%;
+}
+
+.spinka3 {
+
+    width: 15%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: sienna;
+    position: absolute;
+    top: 25%;
+    right: 3%;
+
+}
+
+.spinka4 {
+    width: 15%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25%;
+    right: 0%;
+
+}
+
+.blockpicture {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.picture {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+
+}

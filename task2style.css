@@ -1,0 +1,159 @@
+.container-flex {
+    background-color: gainsboro;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: flex;
+    cursor: pointer;
+}
+
+.letter {
+    font-size: 90px;
+    position: absolute;
+    transition: transform 3s linear;
+}
+
+#letterV {
+    bottom: 0;
+    left: 0;
+}
+
+#letterM {
+    top: 0;
+    right: 0;
+}
+
+.container-flex:hover #letterM {
+    animation: moveM 3s forwards
+}
+
+.container-flex:hover #letterV {
+    animation: moveV 3s forwards;
+}
+
+.container-flex:active{
+    animation: mirror 3s forwards;
+}
+.container-flex:active{
+    background: url(https://a.d-cd.net/8c52e49s-1920.jpg) center no-repeat;
+    background-size: 100%;
+}
+.text:active{
+    opacity: 100%;
+    transform: scaleX(-1) translate(0%, 50%);
+}
+
+
+@keyframes moveM {
+    0%  {
+        transform: translate(0%, 0%);
+    }
+
+    10%{
+        transform: translate(-25%, 2.5%);
+    }
+
+    20% {
+        transform: translate(-100%, -15%);
+    }
+
+    30%{
+        transform: translate(-175%, 2.5%);
+    }
+    
+    40% {
+        transform: translate(-200%, 55%);
+    }
+    
+    50%{
+        transform: translate(-175%, 107.5%)
+    }
+
+    60%{
+        transform: translate(-100%, 125%);
+    }
+
+    70%{
+        transform: translate(-25%, 107.5%);
+    }
+
+    80%{
+        transform: translate(0%, 55%);
+    }
+
+    90%{
+        transform: translate(-25%, 2.5%);
+    }
+    100%{
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes moveV {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    10% {
+        transform: translate(31.25%, 8%);
+    }
+
+    20% {
+        transform: translate(125%, 25%);
+    }
+
+    30% {
+        transform: translate(218.75%, 8%);
+    }
+
+    40% {
+        transform: translate(250%, -42.5%);
+    }
+
+    50% {
+        transform: translate(218.75%, -93%)
+    }
+
+    60% {
+        transform: translate(125%, -110%);
+    }
+
+    70% {
+        transform: translate(31.25%, -93%);
+    }
+
+    80% {
+        transform: translate(0%, -42.5%);
+    }
+
+    90% {
+        transform: translate(31.25%, 8%);
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes mirror{
+    0%{
+        transform: scaleX(1)
+    }
+    100%{
+        transform: scaleX(-1);
+        filter: sepia(100%);
+    }
+}
+
+.text {
+    opacity: 0;
+    font-size: 150%;
+}
+
+svg {
+    display: inline-block;
+    width: 65px;
+    stroke: #000; 
+}
