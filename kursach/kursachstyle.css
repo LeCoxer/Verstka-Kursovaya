@@ -1,0 +1,303 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 80px;
+    background-color: #222; /* Черный цвет фона */
+    color: #fff; /* Белый цвет текста */
+    background-image: url('img/background 1.png'); /* Путь к изображению */
+    background-size: cover; /* Растягиваем изображение на весь экран */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+.image {
+    width: 25px;
+    height: 25px;
+}
+
+.logo {
+    width: 65px;
+    height: 50px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    bottom: 0;
+}
+
+.block {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.block ul {
+    list-style-type: none;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        margin-left: 0;
+        margin-top: 0;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+.game-frame {
+    background-color: #333; /* Темно-серый цвет для рамки игрового поля */
+    padding: 15px; /* Уменьшаем внутренний отступ */
+    margin: 15px auto; /* Уменьшаем внешний отступ */
+    max-width: 500px; /* Уменьшаем максимальную ширину */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: #fff; /* Белый цвет текста */
+}
+
+.hearts-container img {
+    width: 16px; /* Уменьшаем размер сердечек */
+    height: auto;
+}
+
+#progressBarContainer {
+    margin-bottom: 8px; /* Уменьшаем нижний отступ */
+    background-color: transparent;
+    border-radius: 5px;
+    height: 30px; /* Уменьшаем высоту контейнера */
+    overflow: hidden;
+}
+
+#progressBar {
+    background-color: #ff0000; /* Красный цвет для прогресс-бара */
+    height: 100%;
+    border-radius: 5px;
+    width: 100%;
+    animation: progressBarAnimation linear 30s forwards;
+}
+
+#timer {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    font-size: 14px; /* Уменьшаем размер шрифта */
+    color: #fff; /* Белый цвет текста */
+}
+
+#score {
+    text-align: right;
+}
+
+footer {
+    background-color: #333; /* Темно-серый цвет для подвала */
+    color: #fff; /* Белый цвет текста */
+    text-align: center;
+    padding: 8px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Убираем лишние элементы для будущих уровней */
+#levelDescriptionModal {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #222;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    background-color: #8b0000; /* Темно-красный цвет для кнопки */
+    color: #fff; /* Белый цвет текста */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #b30000; /* Красный цвет для кнопки при наведении */
+}
+
+button {
+    background-color: #8b0000; /* Темно-красный цвет */
+    color: #fff; /* Белый цвет текста */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Закругление углов */
+    cursor: pointer; /* Значок курсора при наведении */
+    font-size: 16px; /* Размер шрифта */
+}
+
+button:hover {
+    background-color: #b30000; /* Красный цвет при наведении */
+}
+
+input[type="text"] {
+    width: 50%; /* Ширина поля занимает всю доступную ширину */
+    padding: 10px; /* Отступы внутри поля */
+    margin-bottom: 10px; /* Отступ снизу */
+    border: 1px solid #ccc; /* Серая граница */
+    border-radius: 5px; /* Закругление углов */
+    box-sizing: border-box; /* Учитываем границу и отступы внутри размера поля */
+    font-size: 16px; /* Размер шрифта */
+}
+
+input[type="text"]:focus {
+    outline: none; /* Убираем обводку при фокусе */
+    border-color: #8b0000; /* Цвет границы при фокусе */
+}
+
+.sentence {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.word, .synonym, .antonym {
+    border: 1px solid #8b0000; /* Красная граница */
+    background-color: #FFFFFF; /* Белый фон */
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px; /* Добавим отступ снизу */
+    color: #8b0000; /* Красный цвет текста */
+    cursor: pointer; /* Изменяем курсор при наведении */
+}
+
+.word:hover, .synonym:hover, .antonym:hover {
+    background-color: #f8f8f8; /* Изменяем фон при наведении */
+}
+
+.word.clicked, .synonym.clicked, .antonym.clicked {
+    background-color: #8b0000; /* Красный фон */
+    color: #FFFFFF; /* Белый цвет текста */
+}
+
+.column {
+    display: flex; /* Располагаем элементы внутри контейнера в виде строки */
+    justify-content: space-between; /* Равномерно распределяем элементы по ширине контейнера */
+}
+
+.word-column {
+    flex-basis: 45%; /* Задаем ширину первой колонки (слова) */
+    margin-right: 10px; /* Отступ между колонками */
+}
+
+.synonyms-antonyms-column {
+    flex-basis: 45%; /* Задаем ширину второй колонки (синонимы или антонимы) */
+    margin-left: 10px; /* Отступ между колонками */
+}
+
+#inputContainer,
+#entryButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#userNameInput {
+    width: 200px;
+}
+
+#ratingButton,
+#playButton {
+    margin: 6vw;
+}
+
+#Userinfo {
+    background-color: #8b0000;
+    /* Красный цвет фона */
+    border-radius: 15px;
+    /* Скругленные углы */
+    padding: 1px 10px 1px;
+    /* Внутренние отступы */
+    color: white;
+    /* Белый цвет текста */
+    font-size: 16px;
+    /* Размер шрифта */
+    display: inline-block;
+    /* Отображение в виде прямоугольника */
+}

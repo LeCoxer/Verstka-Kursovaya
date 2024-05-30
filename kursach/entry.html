@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсовая</title>
+    <link rel="stylesheet" href="kursachstyle.css">
+</head>
+<body>
+    <header>
+  <div><img src="../logo.png" class="logo"></div>
+  <h1>Курсовая</h1>
+  <nav>
+    <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../backend.html">Backend</a></li>
+        <li><a href="../frontend.html">Frontend</a></li>
+        <li><a href="../database.html">Database</a></li>
+        <li><a href="../mobile.html">Mobile</a></li>
+        <li><a href="../tasks.html">Задания</a></li>
+    </ul>
+    </nav>
+    </header>
+
+    <div id="inputContainer">
+        <p>Давайте познакомимся перед началом игры!</p>
+        <input type="text" id="userNameInput" placeholder="Введите ваш никнейм">
+        <button id="submitButton">Подтвердить</button>
+    </div>
+    <div id="Userinfo" style="display: none;">
+        <p>Вы вошли под именем:  <span id="usernameDisplay"></span><p>
+    </div>
+    <div id="entryButton" style="display: none;">
+        <button id="playButton">Играть</button>
+        <button id="ratingButton">Рейтинг</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024. Все права защищены.</p>
+    </footer>
+        <script src="entry.js"></script>
+</body>
+
+</html>

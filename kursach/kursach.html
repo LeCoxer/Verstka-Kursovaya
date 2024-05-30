@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсовая</title>
+    <link rel="stylesheet" href="kursachstyle.css">
+</head>
+<body>
+    <header>
+  <div><img src="../logo.png" class="logo"></div>
+  <h1>Курсовая</h1>
+  <nav>
+    <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../backend.html">Backend</a></li>
+        <li><a href="../frontend.html">Frontend</a></li>
+        <li><a href="../database.html">Database</a></li>
+        <li><a href="../mobile.html">Mobile</a></li>
+        <li><a href="../tasks.html">Задания</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+    <div class="game-frame">
+        <div id="gameInfo">
+            <div class="hearts-container">
+                <img src="img/heart.png" alt="Heart">
+                <img src="img/heart.png" alt="Heart">
+                <img src="img/heart.png" alt="Heart">
+            </div>
+            <h2>Уровень: 1</h2>
+            <div id="progressBarContainer">
+                <div id="timer">30</div>
+                <div id="progressBar">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="colorGame"></div>
+        <div id="score">Счет: 0</div>
+        
+        <div id="levelDescriptionModal" class="modal">
+            <div class="modal-content">
+                <h2>Уровень 1</h2>
+                <p>Описание уровня</p>
+                <button id="startLevelButton">Начать игру</button>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024. Все права защищены.</p>
+    </footer>
+    <script src="kursach.js"></script>
+
+
+    <div id="level1DescriptionModal" class="modal">
+        <div class="modal-content">
+            <h2>Уровень 2</h2>
+            <p>Описание уровня 2</p>
+            <button id="startLevelButton1">Начать игру</button>
+        </div>
+    </div>
+    <div id="level2DescriptionModal" class="modal">
+        <div class="modal-content">
+            <h2>Уровень 3</h2>
+            <p>Описание уровня 3</p>
+            <button id="startLevelButton2">Начать игру</button>
+        </div>
+    </div>
+</body>
+
+</html>
