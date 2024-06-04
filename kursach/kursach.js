@@ -326,13 +326,21 @@ function updateLevelHeader(level) {
             const incorrectAnswer = isSynonym ? antonym : synonym; // Неправильный ответ
     
             const optionDescription = isSynonym ? 'Выберите синоним для слова:' : 'Выберите антоним для слова:';
+            const answers = [
+                { text: correctAnswer, option: correctOption },
+                { text: incorrectAnswer, option: 'incorrect' }
+            ];
+
+            shuffleArray(answers);
+            
             const html = `
                 <div>${optionDescription} <strong>${word}</strong></div>
                 <div>
-                    <button class="option" data-option="${correctOption}">${correctAnswer}</button>
-                    <button class="option" data-option="incorrect">${incorrectAnswer}</button>
+                    <button class="option" data-option="${answers[0].option}">${answers[0].text}</button>
+                    <button class="option" data-option="${answers[1].option}">${answers[1].text}</button>
                 </div>
             `;
+            
             gameContainer.innerHTML = html;
     
             const optionButtons = document.querySelectorAll('.option');
