@@ -313,7 +313,6 @@ function updateLevelHeader(level) {
         shuffleArray(words); // Перемешаем массив слов
     
         let currentWordIndex = 0; // Индекс текущего слова
-        let score = 0; // Счет игры
     
         startTimer(gameDuration, timerElement, progressBar); //Запускаем таймер
     
