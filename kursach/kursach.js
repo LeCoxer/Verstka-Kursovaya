@@ -148,7 +148,6 @@ function updateLevelHeader(level) {
             { word: "ком_ьютер", correct: "п" },
             { word: "клав_атура", correct: "и" },
             { word: "про_ессор", correct: "ц" },
-            { word: "сер_ис", correct: "в" },
             { word: "но_тбук", correct: "у" }
         ];
         
