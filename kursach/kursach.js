@@ -175,7 +175,7 @@ function updateLevelHeader(level) {
                 const userLetter = event.target.value.trim().toLowerCase(); //Получаем введенную букву
                 const correctLetter = wordsWithBlanks[currentWordIndex].correct; //Получаем правильную букву
                 if (userLetter === correctLetter) { //Проверка на правильность введенной буквы
-                    score += 10; // Начисляем очки за правильный ответ
+                    score += 5; // Начисляем очки за правильный ответ
                     updateScore(scoreElement, score); //Обновление счета на экране
                     currentWordIndex++; // Переходим к следующему слову
                     displayCurrentWord(); // Отображаем следующее слово с пропуском
