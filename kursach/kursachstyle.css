@@ -301,3 +301,11 @@ input[type="text"]:focus {
     display: inline-block;
     /* Отображение в виде прямоугольника */
 }
+
+#Difficulty {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
