@@ -2,6 +2,7 @@ const userNameInput = document.getElementById('userNameInput');
 const inputContainer = document.getElementById('inputContainer');
 const entryButton = document.getElementById('entryButton');
 const userInfo = document.getElementById('Userinfo');
+const diff = document.getElementById('Difficulty');
 
 window.onload = naming;
 
@@ -12,6 +13,7 @@ function naming() {
         inputContainer.style.display = 'none';
         entryButton.style.display = 'inline-block';
         userInfo.style.display = 'inline-block';
+        diff.style.display = 'inline-block';
     };
 }
 
@@ -24,6 +26,7 @@ submitButton.addEventListener('click', function () {
             inputContainer.style.display = 'none';
             userInfo.style.display = 'inline-block';
             entryButton.style.display = 'inline-block';
+            diff.style.display = 'inline-block';
             sessionStorage.setItem('Username', userName);
             naming();
         } else {
@@ -32,8 +35,33 @@ submitButton.addEventListener('click', function () {
     }
 })
 
+easy.addEventListener('click', function () {
+    easy.style.backgroundColor = '#808080';
+    medium.style.backgroundColor = '#8b0000';
+    hard.style.backgroundColor = '#8b0000';
+    sessionStorage.setItem('Difficulty', 45);
+})
+
+medium.addEventListener('click', function () {
+    medium.style.backgroundColor = '#808080';
+    easy.style.backgroundColor = '#8b0000';
+    hard.style.backgroundColor = '#8b0000';
+    sessionStorage.setItem('Difficulty', 30);
+})
+
+hard.addEventListener('click', function () {
+    hard.style.backgroundColor = '#808080';
+    medium.style.backgroundColor = '#8b0000';
+    easy.style.backgroundColor = '#8b0000';
+    sessionStorage.setItem('Difficulty', 15);
+})
+
 playButton.addEventListener('click', function () {
-    window.location.href = 'kursach.html';
+    if (sessionStorage.getItem('Difficulty') !== null) {
+        window.location.href = 'kursach.html';
+    } else {
+        alert('Сложность не выбрана!')
+    }
 })
 ratingButton.addEventListener('click', function () {
     window.location.href = 'rating.html';
