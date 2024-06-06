@@ -148,7 +148,6 @@ function updateLevelHeader(level) {
             { word: "ком_ьютер", correct: "п" },
             { word: "клав_атура", correct: "и" },
             { word: "про_ессор", correct: "ц" },
-            { word: "сер_ис", correct: "в" },
             { word: "но_тбук", correct: "у" }
         ];
         
@@ -175,7 +174,7 @@ function updateLevelHeader(level) {
                 const userLetter = event.target.value.trim().toLowerCase(); //Получаем введенную букву
                 const correctLetter = wordsWithBlanks[currentWordIndex].correct; //Получаем правильную букву
                 if (userLetter === correctLetter) { //Проверка на правильность введенной буквы
-                    score += 10; // Начисляем очки за правильный ответ
+                    score += 5; // Начисляем очки за правильный ответ
                     updateScore(scoreElement, score); //Обновление счета на экране
                     currentWordIndex++; // Переходим к следующему слову
                     displayCurrentWord(); // Отображаем следующее слово с пропуском
@@ -314,7 +313,6 @@ function updateLevelHeader(level) {
         shuffleArray(words); // Перемешаем массив слов
     
         let currentWordIndex = 0; // Индекс текущего слова
-        let score = 0; // Счет игры
     
         startTimer(gameDuration, timerElement, progressBar); //Запускаем таймер
     
@@ -328,11 +326,19 @@ function updateLevelHeader(level) {
             const incorrectAnswer = isSynonym ? antonym : synonym; // Неправильный ответ
     
             const optionDescription = isSynonym ? 'Выберите синоним для слова:' : 'Выберите антоним для слова:';
+
+            const answers = [
+                { text: correctAnswer, option: correctOption },
+                { text: incorrectAnswer, option: 'incorrect' }
+            ];
+
+            shuffleArray(answers);
+
             const html = `
                 <div>${optionDescription} <strong>${word}</strong></div>
                 <div>
-                    <button class="option" data-option="${correctOption}">${correctAnswer}</button>
-                    <button class="option" data-option="incorrect">${incorrectAnswer}</button>
+                    <button class="option" data-option="${answers[0].option}">${answers[0].text}</button>
+                    <button class="option" data-option="${answers[1].option}">${answers[1].text}</button>
                 </div>
             `;
             gameContainer.innerHTML = html;
